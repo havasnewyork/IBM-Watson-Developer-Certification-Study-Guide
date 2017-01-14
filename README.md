@@ -7,8 +7,8 @@ A Study Guide for Exam C7020-230 - IBM Watson V3 Application Development
  - [1.1 Define the main characteristics of a cognitive system.](#11-define-the-main-characteristics-of-a-cognitive-system)
  - [1.2 Explain neural nets.](#12-explain-neural-nets)
  - [1.3 Explain machine learning technologies (supervised, unsupervised, reinforcement learning approaches).](#13-explain-machine-learning-technologies)
- - 1.4 Define a common set of use cases for cognitive systems.
- - 1.5 Define Precision, Recall, and Accuracy.
+ - [1.4 Define a common set of use cases for cognitive systems.](#14-define-a-common-set-of-use-cases-for-cognitive-systems)
+ - [1.5 Define Precision, Recall, and Accuracy.](#15-define-precision-recall-and-accuracy)
  - 1.6 Explain the importance of separating training, validation and test data.
  - 1.7 Measure accuracy of service.
  - 1.8 Perform Domain Adaption using Watson Knowledge Studio (WKS).
@@ -158,9 +158,9 @@ Many of these capabilities require specialized infrastructure that leverages hig
 
 ##### 1.3.2. Describe some of the main machine learning concepts:
 
-[A Tour of Machine Learning Algorithms](http://machinelearningmastery.com/a-tour-of-machine-learning-algorithms/)
-[List of machine learning concepts](https://en.wikipedia.org/wiki/List_of_machine_learning_concepts)
-[Supervised learning, unsupervised learning and reinforcement learning: Workflow basics](http://stats.stackexchange.com/questions/144154/supervised-learning-unsupervised-learning-and-reinforcement-learning-workflow)
+- [A Tour of Machine Learning Algorithms](http://machinelearningmastery.com/a-tour-of-machine-learning-algorithms/)
+- [List of machine learning concepts](https://en.wikipedia.org/wiki/List_of_machine_learning_concepts)
+- [Supervised learning, unsupervised learning and reinforcement learning: Workflow basics](http://stats.stackexchange.com/questions/144154/supervised-learning-unsupervised-learning-and-reinforcement-learning-workflow)
 
 ##### 1.3.2.1. Supervised learning:
 
@@ -211,15 +211,45 @@ Many of these capabilities require specialized infrastructure that leverages hig
 
 ### 1.4. Define a common set of use cases for cognitive systems.
 
-- Customer Call Centers
- - Agent Assist: Q&A
-  - Problem Solved: Provides a natural language help system so call agents can rapidly retrieve answers to customer questions
-  - Services used: Conversation, natural language answer retrieval, keyword extraction, and entity extraction
- - Automation: Customer/Technical Support Tickets Routing
- - Customer: Go Moment
-  - Problems Solved:
-   - a) Detect the topic of a ticket and route to the appropriate department to handle it
-   - b) room service, maintenance, housekeeping
-   - c) Escalate support tickets based on customersentiment
-   - d) Route support requests to agents that already solved similar problems by detecting natural language similarities between new customer tickets and resolved ones.
- - Services used: natural language (text) classification, keyword extraction, entity extraction, and sentiment/tone analysis
+Customer Call Centers
+- Agent Assist: Q&A
+- Problem Solved: Provides a natural language help system so call agents can rapidly retrieve answers to customer questions
+ - Services used: Conversation, natural language answer retrieval, keyword extraction, and entity extraction
+- Automation: Customer/Technical Support Tickets Routing
+- Customer: Go Moment  
+ - Problems Solved:
+  - a) Detect the topic of a ticket and route to the appropriate department to handle it 
+  - b) room service, maintenance, housekeeping
+  - c) Escalate support tickets based on customersentiment
+  - d) Route support requests to agents that already solved similar problems by detecting natural language similarities between new customer tickets and resolved ones.
+- Services used: natural language (text) classification, keyword extraction, entity extraction, and sentiment/tone analysis
+
+Physicians
+- Expert Advisor:
+ - Example: Watson Discovery Advisor
+ - Problem Solved: Provides relevant medical suggestions and insights in natural language so physicians can more accurately diagnose patients.
+ - Services used: Conversation + natural language answer retrieval, entity extraction 
+ 
+Social Media
+- Data Insights:
+ - Partner: Ground Signal
+ - Problem Solved: Extract useful insights from social media such as Instagram and Twitter by determining the content of photos and topics/sentiment of user posts.
+ - Services used: keyword, entity, and sentiment/tone analysis
+ 
+### 1.5. Define Precision, Recall, and Accuracy.
+
+#### 1.5.1. [Precision:](#https://en.wikipedia.org/wiki/Precision_and_recall)
+- Definition: Precision is the percentage of documents labelled as positive that are actually positive.
+- Formula: True Positives/(True Positives + False Positives)
+#### 1.5.2. [Recall:](#https://en.wikipedia.org/wiki/Precision_and_recall)
+- Recall is the percent of documents labelled as positive were successfully retrieved.
+- Formula: True Positives/(True Positives + False Negatives)
+#### 1.5.3. Accuracy:
+- Accuracy is the fraction of documents relevant to a query that
+were successfully retrieved.
+- Formula: (True Positives + True Negatives)/Total Document Count
+#### 1.5.4. Diagrams like this are often useful in capturing the True/False
+Positive/Negatives described above:
+[https://www.quora.com/What-is-the-best-way-to-understand-the-termsprecision-and-recall](#https://www.quora.com/What-is-the-best-way-to-understand-the-termsprecision-and-recall)
+
+
