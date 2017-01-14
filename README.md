@@ -3,8 +3,8 @@ A Study Guide for Exam C7020-230 - IBM Watson V3 Application Development
 ## High-level Exam Objectives
 
 - [Section 1 - Fundamentals of Cognitive Computing](#section-1---fundamentals-of-cognitive-computing)
- - [1.1 Define the main characteristics of a cognitive system.](#11-Define-the-main-characteristics-of-a-cognitive-system)
- - [1.2 Explain neural nets.](#12-Explain-neural-nets)
+ - [1.1 Define the main characteristics of a cognitive system.](#11-define-the-main-characteristics-of-a-cognitive-system)
+ - [1.2 Explain neural nets.](#12-explain-neural-nets)
  - 1.3 Explain machine learning technologies (supervised, unsupervised, reinforcement learning approaches).
  - 1.4 Define a common set of use cases for cognitive systems.
  - 1.5 Define Precision, Recall, and Accuracy.
