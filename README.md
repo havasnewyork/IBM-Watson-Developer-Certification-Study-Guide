@@ -135,4 +135,35 @@ The goal and motivation for developing the backpropagation algorithm was to find
 #### 1.3 Explain machine learning technologies 
 (supervised, unsupervised, reinforcement learning approaches).
 
+##### 1.3.1. Explain the connection between Machine learning and Cognitive systems
+Reference: [Computing, cognition and the future of knowing](http://www.research.ibm.com/software/IBMResearch/multimedia/Computing_Cognition_WhitePaper.pdf)
+
+Machine learning is a branch of the larger discipline of Artificial Intelligence, which involves the design and construction of computer applications or systems that are able to learn based on their data inputs and/or outputs. The discipline of machine learning also incorporates other data analysis disciplines, ranging from predictive analytics and data mining to pattern recognition. And a variety of specific algorithms are used for this purpose, frequently organized in taxonomies, these algorithms can be used depending on the type of input required. 
+
+Many products and services that we use every day from search-engine advertising applications to facial recognition on social media sites to “smart” cars, phones and electric grids are beginnin to demonstrate aspects of Artificial Intelligence. Most consist of purpose-built, narrowly focused applications, specific to a particular service. They use a few of the core capabilities of cognitive
+computing. Some use text mining. Others use image recognition with machine learning. Most are limited to the application for which they were conceived. 
+
+Cognitive systems, in contrast, combine five core capabilities:
+1. They create deeper human engagement.
+2. They scale and elevate expertise.
+3. They infuse products and services with cognition.
+4. They enable cognitive processes and operations.
+5. They enhance exploration and discovery.
+
+Large-scale machine learning is the process by which cognitive systems improve with training and use.
+
+Cognitive computing is not a single discipline of computer science. It is the combination of multiple academic fields, from hardware architecture to algorithmic strategy to process design to industry expertise.
+
+Many of these capabilities require specialized infrastructure that leverages high-performance computing, specialized hardware architectures and even new computing paradigms. But these technologies must be developed in concert, with hardware, software, cloud platforms and applications that are built expressly to work together in support of cognitive solutions.
+
+##### 1.3.2. Describe some of the main machine learning concepts:
+##### 1.3.2.1. Supervised learning:
+
+We are given a data set and already know what our correct output should look like, having the idea that there is a relationship between
+
+###### 1.3.2.1.1.Classification
+###### 1.3.2.1.2.Regression/Prediction
+###### 1.3.2.1.3.Semi-supervised learning
+
+
 
