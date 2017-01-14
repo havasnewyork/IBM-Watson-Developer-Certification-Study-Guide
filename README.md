@@ -241,15 +241,36 @@ Social Media
 #### 1.5.1. [Precision:](#https://en.wikipedia.org/wiki/Precision_and_recall)
 - Definition: Precision is the percentage of documents labelled as positive that are actually positive.
 - Formula: True Positives/(True Positives + False Positives)
+
 #### 1.5.2. [Recall:](#https://en.wikipedia.org/wiki/Precision_and_recall)
 - Recall is the percent of documents labelled as positive were successfully retrieved.
 - Formula: True Positives/(True Positives + False Negatives)
+
 #### 1.5.3. Accuracy:
-- Accuracy is the fraction of documents relevant to a query that
-were successfully retrieved.
+- Accuracy is the fraction of documents relevant to a query that were successfully retrieved.
 - Formula: (True Positives + True Negatives)/Total Document Count
+
 #### 1.5.4. Diagrams like this are often useful in capturing the True/False
 Positive/Negatives described above:
 [https://www.quora.com/What-is-the-best-way-to-understand-the-termsprecision-and-recall](#https://www.quora.com/What-is-the-best-way-to-understand-the-termsprecision-and-recall)
 
+### 1.6. Explain the importance of separating training, validation and test data.
+
+Normally to perform supervised learning you need two types of data sets:
+1. In one dataset (your "gold standard") you have the input data together with correct/expected output, This dataset is usually duly prepared either by humans or by collecting some data in semi-automated way. But it is important that you have the expected output for every data row here, because you need for supervised learning.
+2. The data you are going to apply your model to. In many cases this is the data where you are interested for the output of your model and thus you don't have any "expected" output here yet.
+
+While performing machine learning you do the following:
+1. Training phase: you present your data from your "gold standard" and train your model, by pairing the input with expected output.
+2. Validation/Test phase: in order to estimate how well your model has been trained (that is dependent upon the size of your data, the value you would like to predict, input etc) and to estimate model properties (mean error for numeric predictors, classification errors for classifiers, recall and precision for IR-models etc.)
+3. Application phase: now you apply your freshly-developed model to the real-world data and get the results. Since you normally don't have any reference value in this type of data (otherwise, why would you need your model?), you can only speculate about the quality of your model output using the results of your validation phase.
+
+The validation phase is often split into two parts:
+
+1. In the first part you just look at your models and select the best performing approach using the validation data (=validation)
+2. Then you estimate the accuracy of the selected approach (=test).
+
+Hence the separation to 50/25/25.
+
+In case if you don't need to choose an appropriate model from several rivaling approaches, you can just re-partition your set that you basically have only training set and test set, without performing the validation of your trained model. I personally partition them 70/30 then.
 
