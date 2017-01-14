@@ -261,14 +261,14 @@ Normally to perform supervised learning you need two types of data sets:
 2. The data you are going to apply your model to. In many cases this is the data where you are interested for the output of your model and thus you don't have any "expected" output here yet.
 
 While performing machine learning you do the following:
-1. Training phase: you present your data from your "gold standard" and train your model, by pairing the input with expected output.
-2. Validation/Test phase: in order to estimate how well your model has been trained (that is dependent upon the size of your data, the value you would like to predict, input etc) and to estimate model properties (mean error for numeric predictors, classification errors for classifiers, recall and precision for IR-models etc.)
-3. Application phase: now you apply your freshly-developed model to the real-world data and get the results. Since you normally don't have any reference value in this type of data (otherwise, why would you need your model?), you can only speculate about the quality of your model output using the results of your validation phase.
+ 1. Training phase: you present your data from your "gold standard" and train your model, by pairing the input with expected output.
+ 2. Validation/Test phase: in order to estimate how well your model has been trained (that is dependent upon the size of your data, the value you would like to predict, input etc) and to estimate model properties (mean error for numeric predictors, classification errors for classifiers, recall and precision for IR-models etc.)
+ 3. Application phase: now you apply your freshly-developed model to the real-world data and get the results. Since you normally don't have any reference value in this type of data (otherwise, why would you need your model?), you can only speculate about the quality of your model output using the results of your validation phase.
 
 The validation phase is often split into two parts:
 
-1. In the first part you just look at your models and select the best performing approach using the validation data (=validation)
-2. Then you estimate the accuracy of the selected approach (=test).
+ 1. In the first part you just look at your models and select the best performing approach using the validation data (=validation)
+ 2. Then you estimate the accuracy of the selected approach (=test).
 
 Hence the separation to 50/25/25.
 
