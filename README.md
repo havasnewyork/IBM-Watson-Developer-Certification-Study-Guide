@@ -52,7 +52,7 @@ A Study Guide for Exam C7020-230 - IBM Watson V3 Application Development
 
 
 ## Section 1 - Fundamentals of Cognitive Computing
-#### 1.1. Define the main characteristics of a cognitive system.
+### 1.1. Define the main characteristics of a cognitive system.
 
 - Cognitive systems understand, reason and learn 
  - Must understand structured and unstructured data 
@@ -63,7 +63,7 @@ A Study Guide for Exam C7020-230 - IBM Watson V3 Application Development
  - Supervised learning versus unsupervised learning 
 - Cognitive systems use natural language processing 
 
-#### 1.2 Explain neural nets.
+### 1.2 Explain neural nets.
 
 https://github.com/cazala/synaptic/wiki/Neural-Networks-101
 
@@ -132,7 +132,7 @@ The goal and motivation for developing the backpropagation algorithm was to find
 [![Neural Networks Demystified - Part 3: Gradient Descent](https://i.ytimg.com/vi/5u0jaA3qAGk/maxresdefault.jpg)](https://www.youtube.com/watch?v=5u0jaA3qAGk?v=VID)
 [Neural Networks Demystified - Part 3: Gradient Descent](https://www.youtube.com/watch?v=5u0jaA3qAGk?v=VID)
 
-#### 1.3 Explain machine learning technologies 
+### 1.3 Explain machine learning technologies 
 (supervised, unsupervised, reinforcement learning approaches).
 
 ##### 1.3.1. Explain the connection between Machine learning and Cognitive systems
@@ -144,11 +144,11 @@ Many products and services that we use every day from search-engine advertising 
 computing. Some use text mining. Others use image recognition with machine learning. Most are limited to the application for which they were conceived. 
 
 Cognitive systems, in contrast, combine five core capabilities:
-1. They create deeper human engagement.
-2. They scale and elevate expertise.
-3. They infuse products and services with cognition.
-4. They enable cognitive processes and operations.
-5. They enhance exploration and discovery.
+- 1. They create deeper human engagement.
+- 2. They scale and elevate expertise.
+- 3. They infuse products and services with cognition.
+- 4. They enable cognitive processes and operations.
+- 5. They enhance exploration and discovery.
 
 Large-scale machine learning is the process by which cognitive systems improve with training and use.
 
@@ -157,13 +157,68 @@ Cognitive computing is not a single discipline of computer science. It is the co
 Many of these capabilities require specialized infrastructure that leverages high-performance computing, specialized hardware architectures and even new computing paradigms. But these technologies must be developed in concert, with hardware, software, cloud platforms and applications that are built expressly to work together in support of cognitive solutions.
 
 ##### 1.3.2. Describe some of the main machine learning concepts:
+
+[A Tour of Machine Learning Algorithms](http://machinelearningmastery.com/a-tour-of-machine-learning-algorithms/)
+[List of machine learning concepts](https://en.wikipedia.org/wiki/List_of_machine_learning_concepts)
+[Supervised learning, unsupervised learning and reinforcement learning: Workflow basics](http://stats.stackexchange.com/questions/144154/supervised-learning-unsupervised-learning-and-reinforcement-learning-workflow)
+
 ##### 1.3.2.1. Supervised learning:
 
-We are given a data set and already know what our correct output should look like, having the idea that there is a relationship between
+We are given a data set and already know what our correct output should look like, having the idea that there is a relationship between the input and output. 
 
-###### 1.3.2.1.1.Classification
-###### 1.3.2.1.2.Regression/Prediction
-###### 1.3.2.1.3.Semi-supervised learning
+##### 1.3.2.1.1.Classification
 
+In a classification problem we are trying to predict results in a discrete output. In other words we are trying to map input variables into categories. 
 
+##### 1.3.2.1.2.Regression/Prediction
 
+In a regression problem we are trying to predict results with a continous output meaning that we are trying to map input variables to some continous function. 
+
+##### 1.3.2.1.3.Semi-supervised learning
+
+Semi-supervised learning are tasks and techniques that also make use of unlabeled data for training – typically a small amount of labeled data with a large amount of unlabeled data.
+
+##### 1.3.2.2. Unsupervised learning:
+
+Unsupervised learning is a type of machine learning algorithm used to draw inferences from datasets consisting of input data without labeled responses. Input data is not labeled and does not have a known result.
+
+##### 1.3.2.2.1.Artificial neural network
+
+An Artificial Neural Network (ANN) is an information processing paradigm that is inspired by the way biological nervous systems, such as the brain, process information. 
+
+##### 1.3.2.2.2.Association rule learning
+
+Association rule learning is a rule-based machine learning method for discovering interesting relations between variables in large databases. It is intended to identify strong rules discovered in databases using some measures of interestingness.
+
+##### 1.3.2.2.3.Hierarchical clustering
+
+Hierarchical clustering is a method of cluster analysis which seeks to build a hierarchy of clusters. Strategies for hierarchical clustering generally fall into two types:
+
+- Agglomerative: This is a "bottom up" approach: each observation starts in its own cluster, and pairs of clusters are merged as one moves up the hierarchy.
+- Divisive: This is a "top down" approach: all observations start in one cluster, and splits are performed recursively as one moves down the hierarchy.
+
+##### 1.3.2.2.4.Cluster analysis
+
+Cluster analysis or clustering is the task of grouping a set of objects in such a way that objects in the same group (called a cluster) are more similar (in some sense or another) to each other than to those in other groups (clusters). 
+
+##### 1.3.2.2.5.Outlier Detection
+
+The local outlier factor is based on a concept of a local density, where locality is given by {\displaystyle k} k nearest neighbors, whose distance is used to estimate the density. By comparing the local density of an object to the local densities of its neighbors, one can identify regions of similar density, and points that have a substantially lower density than their neighbors. These are considered to be outliers.
+
+##### 1.3.2.3. Reinforcement learning
+These algorithms choose an action, based on each data point and later learn how good the decision was. Over time, the algorithm changes its strategy to learn better and achieve the best reward. Thus, reinforcement learning is particularly well-suited to problems which include a long-term versus short-term reward trade-off. 
+
+### 1.4. Define a common set of use cases for cognitive systems.
+
+- Customer Call Centers
+ - Agent Assist: Q&A
+  - Problem Solved: Provides a natural language help system so call agents can rapidly retrieve answers to customer questions
+  - Services used: Conversation, natural language answer retrieval, keyword extraction, and entity extraction
+ - Automation: Customer/Technical Support Tickets Routing
+ - Customer: Go Moment
+  - Problems Solved:
+   - a) Detect the topic of a ticket and route to the appropriate department to handle it
+   - room service, maintenance, housekeeping
+   - c) Escalate support tickets based on customersentiment
+   - d) Route support requests to agents that already solved similar problems by detecting natural language similarities between new customer tickets and resolved ones.
+ - Services used: natural language (text) classification, keyword extraction, entity extraction, and sentiment/tone analysis
