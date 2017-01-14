@@ -105,6 +105,7 @@ A neural network learns by training. The algorithm used to do this is called bac
 A feedforward neural network is an artificial neural network wherein connections between the units do not form a cycle. As such, it is different from recurrent neural networks.
 In this network, the information moves in only one direction, forward, from the input nodes, through the hidden nodes (if any) and to the output nodes. There are no cycles or loops in the network.
 
+Video:
 [![Neural Networks Demystified Part 2: Forward Propagation](https://i.ytimg.com/vi/UJwK6jAStmg/maxresdefault.jpg)](https://www.youtube.com/watch?v=UJwK6jAStmg?v=VID)
 [Neural Networks Demystified Part 2: Forward Propagation](https://www.youtube.com/watch?v=UJwK6jAStmg?v=VID)
 
@@ -124,11 +125,13 @@ This algorithm calculates the gradient, also called the instant slope (the arrow
 The goal of any supervised learning algorithm is to find a function that best maps a set of inputs to its correct output. An example would be a classification task, where the input is an image of an animal, and the correct output would be the name of the animal.
 The goal and motivation for developing the backpropagation algorithm was to find a way to train a multi-layered neural network such that it can learn the appropriate internal representations to allow it to learn any arbitrary mapping of input to output.
 
+Video:
 [![Neural Networks Demystified - Part 4: Backpropagation](https://i.ytimg.com/vi/GlcnxUlrtek/maxresdefault.jpg)](https://www.youtube.com/watch?v=GlcnxUlrtek?v=VID)
 [Neural Networks Demystified - Part 4: Backpropagation](https://www.youtube.com/watch?v=GlcnxUlrtek?v=VID)
 
 ##### 1.2.1.5 Gradient Descent 
 
+Video:
 [![Neural Networks Demystified - Part 3: Gradient Descent](https://i.ytimg.com/vi/5u0jaA3qAGk/maxresdefault.jpg)](https://www.youtube.com/watch?v=5u0jaA3qAGk?v=VID)
 [Neural Networks Demystified - Part 3: Gradient Descent](https://www.youtube.com/watch?v=5u0jaA3qAGk?v=VID)
 
