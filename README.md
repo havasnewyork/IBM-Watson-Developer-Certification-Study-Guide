@@ -1,5 +1,6 @@
 # IBM-Watson-Professional-Certification-Study-Guide
 A Study Guide for Exam C7020-230 - IBM Watson V3 Application Development
+
 ## High-level Exam Objectives
 
 - [Section 1 - Fundamentals of Cognitive Computing](#section-1---fundamentals-of-cognitive-computing)
@@ -66,6 +67,9 @@ A Study Guide for Exam C7020-230 - IBM Watson V3 Application Development
 
 https://github.com/cazala/synaptic/wiki/Neural-Networks-101
 
+- Neural Nets mimic how neurons in the brain communicate. 
+- Neural networks are models of biological neural structures. 
+
 Neurons are the basic unit of a neural network. In nature, neurons have a number of dendrites (inputs), a cell nucleus (processor) and an axon (output). When the neuron activates, it accumulates all its incoming inputs, and if it goes over a certain threshold it fires a signal thru the axon.. sort of. The important thing about neurons is that they can learn.
 
 Artificial neurons look more like this:
@@ -78,12 +82,23 @@ Artificial neurons look more like this:
 So how does a Neural Network learn?
 A neural network learns by training. The algorithm used to do this is called backpropagation. After giving the network an input, it will produce an output, the next step is to teach the network what should have been the correct output for that input (the ideal output). The network will take this ideal output and start adjusting the weights to produce a more accurate output next time, starting from the output layer and going backwards until reaching the input layer. So next time we show that same input to the network, it's going to give an output closer to that ideal one that we trained it to output. This process is repeated for many iterations until we consider the error between the ideal output and the one output by the network to be small enough.
 
-But how does the backpropagation work?
-This algorithm adjusts the weights using Gradient Descent calculation. Let's say we make a graphic of the relationship between a certain weight and the error in the network's output:
+#### 1.2.1.1. Explain the role of synapse and neuron
 
-![Artificial neurons](https://camo.githubusercontent.com/e6a0e02bd080acc585a622d2c03ca6e44a9e9adc/687474703a2f2f692e696d6775722e636f6d2f36565a6542706e2e706e67)
+- A nueron operates by recieving signals from other nuerons through connections called synapses. 
 
-This algorithm calculates the gradient, also called the instant slope (the arrow in the image), of the actual value of the weight, and it moves it in the direction that will lead to a lower error (red dot in the image). This process is repeated for every weight in the network.
+#### 1.2.1.2. Understand weights and bias
+
+- For each nueron input there is a weight (the weight of that specific connection).
+- When a artifical neuron activates if computes its state by adding all the incoming inputs multiplied by it's corresponding connection weight. 
+- But Neurons always have one extra input, the bias which is always 1 and has it's own connection weight. THis makes sure that even when all other inputs are none there's going to be activation in the nueron. 
+
+![Weights and Bias](https://qph.ec.quoracdn.net/main-qimg-31d260a826ec73fce99ae098be5a7351)
+
+#### 1.2.1.3. List various approaches to neural nets
+
+[Types of artificial neural networks](https://en.wikipedia.org/wiki/Types_of_artificial_neural_networks)
+
+#### 1.2.1.4. Explain forward and backward propagation
 
 ##### Feed Forward Propagation 
 
@@ -93,22 +108,29 @@ In this network, the information moves in only one direction, forward, from the 
 [![Neural Networks Demystified Part 2: Forward Propagation](https://i.ytimg.com/vi/UJwK6jAStmg/maxresdefault.jpg)](https://www.youtube.com/watch?v=UJwK6jAStmg?v=VID)
 [Neural Networks Demystified Part 2: Forward Propagation](https://www.youtube.com/watch?v=UJwK6jAStmg?v=VID)
 
-##### Gradient Descent 
-
-[![Neural Networks Demystified - Part 3: Gradient Descent](https://i.ytimg.com/vi/5u0jaA3qAGk/maxresdefault.jpg)](https://www.youtube.com/watch?v=5u0jaA3qAGk?v=VID)
-[Neural Networks Demystified - Part 3: Gradient Descent](https://www.youtube.com/watch?v=5u0jaA3qAGk?v=VID)
-
 ##### Back Propagation 
 
 Backpropagation, an abbreviation for "backward propagation of errors", is a common method of training artificial neural networks used in conjunction with an optimization method such as gradient descent. It calculates the gradient of a loss function with respect to all the weights in the network, so that the gradient is fed to the optimization method which in turn uses it to update the weights, in an attempt to minimize the loss function.
 
 Backpropagation requires a known, desired output for each input value in order to calculate the loss function gradient – it is therefore usually considered to be a supervised learning method; nonetheless, it is also used in some unsupervised networks such as autoencoders. It is a generalization of the delta rule to multi-layered feedforward networks, made possible by using the chain rule to iteratively compute gradients for each layer. Backpropagation requires that the activation function used by the artificial neurons (or "nodes") be differentiable.
 
+But how does the backpropagation work?
+This algorithm adjusts the weights using Gradient Descent calculation. Let's say we make a graphic of the relationship between a certain weight and the error in the network's output:
+
+![Artificial neurons](https://camo.githubusercontent.com/e6a0e02bd080acc585a622d2c03ca6e44a9e9adc/687474703a2f2f692e696d6775722e636f6d2f36565a6542706e2e706e67)
+
+This algorithm calculates the gradient, also called the instant slope (the arrow in the image), of the actual value of the weight, and it moves it in the direction that will lead to a lower error (red dot in the image). This process is repeated for every weight in the network.
+
 The goal of any supervised learning algorithm is to find a function that best maps a set of inputs to its correct output. An example would be a classification task, where the input is an image of an animal, and the correct output would be the name of the animal.
 The goal and motivation for developing the backpropagation algorithm was to find a way to train a multi-layered neural network such that it can learn the appropriate internal representations to allow it to learn any arbitrary mapping of input to output.
 
 [![Neural Networks Demystified - Part 4: Backpropagation](https://i.ytimg.com/vi/GlcnxUlrtek/maxresdefault.jpg)](https://www.youtube.com/watch?v=GlcnxUlrtek?v=VID)
 [Neural Networks Demystified - Part 4: Backpropagation](https://www.youtube.com/watch?v=GlcnxUlrtek?v=VID)
+
+##### 1.2.1.5 Gradient Descent 
+
+[![Neural Networks Demystified - Part 3: Gradient Descent](https://i.ytimg.com/vi/5u0jaA3qAGk/maxresdefault.jpg)](https://www.youtube.com/watch?v=5u0jaA3qAGk?v=VID)
+[Neural Networks Demystified - Part 3: Gradient Descent](https://www.youtube.com/watch?v=5u0jaA3qAGk?v=VID)
 
 #### 1.3 Explain machine learning technologies 
 (supervised, unsupervised, reinforcement learning approaches).
