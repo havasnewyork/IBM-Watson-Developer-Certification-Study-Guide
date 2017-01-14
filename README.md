@@ -9,7 +9,7 @@ A Study Guide for Exam C7020-230 - IBM Watson V3 Application Development
  - [1.3 Explain machine learning technologies (supervised, unsupervised, reinforcement learning approaches).](#13-explain-machine-learning-technologies)
  - [1.4 Define a common set of use cases for cognitive systems.](#14-define-a-common-set-of-use-cases-for-cognitive-systems)
  - [1.5 Define Precision, Recall, and Accuracy.](#15-define-precision-recall-and-accuracy)
- - [1.6 Explain the importance of separating training, validation and test data.](#16-explain-the-importance-of-separating-training-validation-and-test-data]
+ - [1.6 Explain the importance of separating training, validation and test data.](#16-explain-the-importance-of-separating-training-validation-and-test-data)
  - [1.7 Measure accuracy of service.](#17-measure-accuracy-of-service)
  - [1.8 Perform Domain Adaption using Watson Knowledge Studio (WKS).](#18-perform-domain-adaption-using-watson-knowledge-studio-WKS)
  - [1.9 Define Intents and Classes.](#19-define-intents-and-classes)
@@ -274,7 +274,7 @@ Hence the separation to 50/25/25.
 
 In case if you don't need to choose an appropriate model from several rivaling approaches, you can just re-partition your set that you basically have only training set and test set, without performing the validation of your trained model. I personally partition them 70/30 then.
 
-1.7. Measure accuracy of service.
+### 1.7. Measure accuracy of service.
 
 The goal of the ML model is to learn patterns that generalize well for unseen data instead of just memorizing the data that it was shown during training. Once you have a model, it is important to check if your model is performing well on unseen examples that you have not used for training the model. To do this, you use the model to predict the answer on the evaluation dataset (held out data) and then compare the predicted target to the actual answer (ground truth).
 
@@ -282,7 +282,7 @@ A number of metrics are used in ML to measure the predictive accuracy of a model
 
 ### 1.8. Perform Domain Adaption using Watson Knowledge Studio (WKS).
 
-### 1.9. Define Intents and Classes.Define Intents and Classes.
+### 1.9. Define Intents and Classes.
 
 - The Natural Language Classifier service available via WDC, enables clustering or classification based on some measure of inherent similarity or distance given the input data. Such clustering is known as intents or classes.
 
