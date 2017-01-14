@@ -164,49 +164,50 @@ Many of these capabilities require specialized infrastructure that leverages hig
 
 ##### 1.3.2.1. Supervised learning:
 
-We are given a data set and already know what our correct output should look like, having the idea that there is a relationship between the input and output. 
+- We are given a data set and already know what our correct output should look like, having the idea that there is a relationship between the input and output. 
 
 ##### 1.3.2.1.1.Classification
 
-In a classification problem we are trying to predict results in a discrete output. In other words we are trying to map input variables into categories. 
+- In a classification problem we are trying to predict results in a discrete output. In other words we are trying to map input variables into categories. 
 
 ##### 1.3.2.1.2.Regression/Prediction
 
-In a regression problem we are trying to predict results with a continous output meaning that we are trying to map input variables to some continous function. 
+- In a regression problem we are trying to predict results with a continous output meaning that we are trying to map input variables to some continous function. 
 
 ##### 1.3.2.1.3.Semi-supervised learning
 
-Semi-supervised learning are tasks and techniques that also make use of unlabeled data for training – typically a small amount of labeled data with a large amount of unlabeled data.
+- Semi-supervised learning are tasks and techniques that also make use of unlabeled data for training – typically a small amount of labeled data with a large amount of unlabeled data.
 
 ##### 1.3.2.2. Unsupervised learning:
 
-Unsupervised learning is a type of machine learning algorithm used to draw inferences from datasets consisting of input data without labeled responses. Input data is not labeled and does not have a known result.
+- Unsupervised learning is a type of machine learning algorithm used to draw inferences from datasets consisting of input data without labeled responses. Input data is not labeled and does not have a known result.
 
 ##### 1.3.2.2.1.Artificial neural network
 
-An Artificial Neural Network (ANN) is an information processing paradigm that is inspired by the way biological nervous systems, such as the brain, process information. 
+- An Artificial Neural Network (ANN) is an information processing paradigm that is inspired by the way biological nervous systems, such as the brain, process information. 
 
 ##### 1.3.2.2.2.Association rule learning
 
-Association rule learning is a rule-based machine learning method for discovering interesting relations between variables in large databases. It is intended to identify strong rules discovered in databases using some measures of interestingness.
+- Association rule learning is a rule-based machine learning method for discovering interesting relations between variables in large databases. It is intended to identify strong rules discovered in databases using some measures of interestingness.
 
 ##### 1.3.2.2.3.Hierarchical clustering
 
-Hierarchical clustering is a method of cluster analysis which seeks to build a hierarchy of clusters. Strategies for hierarchical clustering generally fall into two types:
+- Hierarchical clustering is a method of cluster analysis which seeks to build a hierarchy of clusters. Strategies for hierarchical clustering generally fall into two types:
 
-- Agglomerative: This is a "bottom up" approach: each observation starts in its own cluster, and pairs of clusters are merged as one moves up the hierarchy.
-- Divisive: This is a "top down" approach: all observations start in one cluster, and splits are performed recursively as one moves down the hierarchy.
+ - Agglomerative: This is a "bottom up" approach: each observation starts in its own cluster, and pairs of clusters are merged as one moves up the hierarchy.
+ - Divisive: This is a "top down" approach: all observations start in one cluster, and splits are performed recursively as one moves down the hierarchy.
 
 ##### 1.3.2.2.4.Cluster analysis
 
-Cluster analysis or clustering is the task of grouping a set of objects in such a way that objects in the same group (called a cluster) are more similar (in some sense or another) to each other than to those in other groups (clusters). 
+- Cluster analysis or clustering is the task of grouping a set of objects in such a way that objects in the same group (called a cluster) are more similar (in some sense or another) to each other than to those in other groups (clusters). 
 
 ##### 1.3.2.2.5.Outlier Detection
 
-The local outlier factor is based on a concept of a local density, where locality is given by {\displaystyle k} k nearest neighbors, whose distance is used to estimate the density. By comparing the local density of an object to the local densities of its neighbors, one can identify regions of similar density, and points that have a substantially lower density than their neighbors. These are considered to be outliers.
+- The local outlier factor is based on a concept of a local density, where locality is given by {\displaystyle k} k nearest neighbors, whose distance is used to estimate the density. By comparing the local density of an object to the local densities of its neighbors, one can identify regions of similar density, and points that have a substantially lower density than their neighbors. These are considered to be outliers.
 
 ##### 1.3.2.3. Reinforcement learning
-These algorithms choose an action, based on each data point and later learn how good the decision was. Over time, the algorithm changes its strategy to learn better and achieve the best reward. Thus, reinforcement learning is particularly well-suited to problems which include a long-term versus short-term reward trade-off. 
+
+- These algorithms choose an action, based on each data point and later learn how good the decision was. Over time, the algorithm changes its strategy to learn better and achieve the best reward. Thus, reinforcement learning is particularly well-suited to problems which include a long-term versus short-term reward trade-off. 
 
 ### 1.4. Define a common set of use cases for cognitive systems.
 
@@ -218,7 +219,7 @@ These algorithms choose an action, based on each data point and later learn how 
  - Customer: Go Moment
   - Problems Solved:
    - a) Detect the topic of a ticket and route to the appropriate department to handle it
-   - room service, maintenance, housekeeping
+   - b) room service, maintenance, housekeeping
    - c) Escalate support tickets based on customersentiment
    - d) Route support requests to agents that already solved similar problems by detecting natural language similarities between new customer tickets and resolved ones.
  - Services used: natural language (text) classification, keyword extraction, entity extraction, and sentiment/tone analysis
