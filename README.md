@@ -9,12 +9,12 @@ A Study Guide for Exam C7020-230 - IBM Watson V3 Application Development
  - [1.3 Explain machine learning technologies (supervised, unsupervised, reinforcement learning approaches).](#13-explain-machine-learning-technologies)
  - [1.4 Define a common set of use cases for cognitive systems.](#14-define-a-common-set-of-use-cases-for-cognitive-systems)
  - [1.5 Define Precision, Recall, and Accuracy.](#15-define-precision-recall-and-accuracy)
- - 1.6 Explain the importance of separating training, validation and test data.
- - 1.7 Measure accuracy of service.
- - 1.8 Perform Domain Adaption using Watson Knowledge Studio (WKS).
- - 1.9 Define Intents and Classes. 
- - 1.10 Explain difference between ground truth and corpus.
- - 1.11 Define the difference between the user question and the user intent.
+ - [1.6 Explain the importance of separating training, validation and test data.](#16-explain-the-importance-of-separating-training-validation-and-test-data]
+ - [1.7 Measure accuracy of service.](#17-measure-accuracy-of-service)
+ - [1.8 Perform Domain Adaption using Watson Knowledge Studio (WKS).](#18-perform-domain-adaption-using-watson-knowledge-studio-WKS)
+ - [1.9 Define Intents and Classes.](#19-define-intents-and-classes)
+ - [1.10 Explain difference between ground truth and corpus.](#110-explain-difference-between-ground-truth-and-corpus)
+ - [1.11 Define the difference between the user question and the user intent.](#111-define-the-difference-between-the-user-question-and-the-user-intent)
 
 - Section 2 - Use Cases of Cognitive Services
  - 2.1 Select appropriate combination of cognitive technologies based on use-case and data format.
@@ -257,8 +257,8 @@ Positive/Negatives described above:
 ### 1.6. Explain the importance of separating training, validation and test data.
 
 Normally to perform supervised learning you need two types of data sets:
-1. In one dataset (your "gold standard") you have the input data together with correct/expected output, This dataset is usually duly prepared either by humans or by collecting some data in semi-automated way. But it is important that you have the expected output for every data row here, because you need for supervised learning.
-2. The data you are going to apply your model to. In many cases this is the data where you are interested for the output of your model and thus you don't have any "expected" output here yet.
+ 1. In one dataset (your "gold standard") you have the input data together with correct/expected output, This dataset is usually duly prepared either by humans or by collecting some data in semi-automated way. But it is important that you have the expected output for every data row here, because you need for supervised learning.
+ 2. The data you are going to apply your model to. In many cases this is the data where you are interested for the output of your model and thus you don't have any "expected" output here yet.
 
 While performing machine learning you do the following:
  1. Training phase: you present your data from your "gold standard" and train your model, by pairing the input with expected output.
@@ -274,3 +274,34 @@ Hence the separation to 50/25/25.
 
 In case if you don't need to choose an appropriate model from several rivaling approaches, you can just re-partition your set that you basically have only training set and test set, without performing the validation of your trained model. I personally partition them 70/30 then.
 
+1.7. Measure accuracy of service.
+
+The goal of the ML model is to learn patterns that generalize well for unseen data instead of just memorizing the data that it was shown during training. Once you have a model, it is important to check if your model is performing well on unseen examples that you have not used for training the model. To do this, you use the model to predict the answer on the evaluation dataset (held out data) and then compare the predicted target to the actual answer (ground truth).
+
+A number of metrics are used in ML to measure the predictive accuracy of a model. The choice of accuracy metric depends on the ML task. It is important to review these metrics to decide if your model is performing well.
+
+### 1.8. Perform Domain Adaption using Watson Knowledge Studio (WKS).
+
+### 1.9. Define Intents and Classes.Define Intents and Classes.
+
+- The Natural Language Classifier service available via WDC, enables clustering or classification based on some measure of inherent similarity or distance given the input data. Such clustering is known as intents or classes.
+
+- Where classes may include images, intent is a similar clustering for written utterances in unstructured natural language format.
+
+### 1.10. Explain difference between ground truth and corpus.
+
+- Ground truth is used in both supervised and unsupervised machine learning approaches, yet portray different values and formats. For example, in a typical supervised learning system, ground truth consisted of inputs (questions) and approved outputs (answers). With the aide of logistical regression and iterative training the system improves in accuracy.
+
+- In unsupervised approach, such as NLC, the ground truth consists of a comma-separated csv or a JSON file that lists hundreds of sample utterances and a dozen or so intents (or classes) classifying those utterances.
+
+### 1.11. Define the difference between the user question and the user intent.
+
+To answer correctly, we need to understand the intent behind the question, in order to first classify it then take action on it (e.g., with a Dialog API)
+- The user question is the verbatim question
+- The user intent maps the user question to a known classification
+- This is a form of classifying question based on search goals
+- Intents are the superset of all actions your users may want your cognitive system to undertake. Put another way, questions are a subset of user intents. Questions usually end in "?", but sometimes we need to extract the user intent from the underlying context.
+ - Common examples of user intents:
+  - Automation: “Schedule a meeting with Sue at 5pm next Tuesday.”
+  - Declarative: “I need to change my password.”
+  - Imperative: “Show me the directions to my the nearest gas station.”
