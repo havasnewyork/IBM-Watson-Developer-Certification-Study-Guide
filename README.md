@@ -1,7 +1,7 @@
 # IBM Watson Developer Certification Study Guide
 A Study Guide for Exam C7020-230 - IBM Watson V3 Application Development
 
-The aim of this document is to provide a more consolidated view of the required reading and study that is outlined in the [IBM Watson Professional Certification Program Study Guide Series](#http://public.dhe.ibm.com/partnerworld/pub/certify/Study_Guide_C7020_230.pdf?webSyncID=c9369987-7a44-4555-91ff-e252371955d8&sessionGUID=8692aaa8-3daf-4549-9f8e-f9bff718a0e2). 
+The aim of this document is to provide a more consolidated view of the required reading and study that is outlined in the [IBM Watson Professional Certification Program Study Guide Series](http://public.dhe.ibm.com/partnerworld/pub/certify/Study_Guide_C7020_230.pdf?webSyncID=c9369987-7a44-4555-91ff-e252371955d8&sessionGUID=8692aaa8-3daf-4549-9f8e-f9bff718a0e2). 
 
 ## High-level Exam Objectives
 
