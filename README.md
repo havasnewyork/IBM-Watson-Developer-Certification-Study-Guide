@@ -16,8 +16,8 @@ A Study Guide for Exam C7020-230 - IBM Watson V3 Application Development
  - [1.10 Explain difference between ground truth and corpus.](#110-explain-difference-between-ground-truth-and-corpus)
  - [1.11 Define the difference between the user question and the user intent.](#111-define-the-difference-between-the-user-question-and-the-user-intent)
 
-- Section 2 - Use Cases of Cognitive Services
- - 2.1 Select appropriate combination of cognitive technologies based on use-case and data format.
+- [Section 2 - Use Cases of Cognitive Services](#section-2---use-cases-of-cognitive-Services)
+ - [2.1 Select appropriate combination of cognitive technologies based on use-case and data format.](#21-select-appropriate-combination-of-cognitive-technologies-based-on-use-case-and-data-format)
  - 2.2 Explain the uses of the Watson services in the Application Starter Kits.
  - 2.3 Describe the Watson Conversational Agent.
  - 2.4 Explain use cases for integrating external systems (such as Twitter, Weather API).
@@ -309,3 +309,32 @@ To answer correctly, we need to understand the intent behind the question, in or
   - Automation: “Schedule a meeting with Sue at 5pm next Tuesday.”
   - Declarative: “I need to change my password.”
   - Imperative: “Show me the directions to my the nearest gas station.”
+  
+## Section 2 - Use Cases of Cognitive Services
+
+### 2.1. Select appropriate combination of cognitive technologies based on use-case and data format.
+
+#### 2.1.1. Agent-assist for email-based customer call center
+ - Data: customer emails
+ - Services: Q&A, Text classification, entity extraction and, keyword extraction
+ - Watson-specific: NLC, R&R, Alchemy Language
+ 
+#### 2.1.2. Agent-assist for phone-based customer call center
+ - Data: customer voice recordings
+ - Services: Q&A, Speech recognition, text-to-speech, text classification, entity extraction, keyword extraction
+ - Watson-specific: NLC, R&R, Alchemy Language
+
+#### 2.1.3. Expert advisor use case for physicians
+ - Data: natural language intents
+ - Services: Q&A, Text classification, entity extraction and keyword extraction
+ - Watson-specific: NLC, R&R, Alchemy Language
+ 
+#### 2.1.4. Data insights for Instagram images
+ - Data: images
+ - Services: Image classification and natural OCR
+ - Watson-specific: Visual Insights
+
+#### 2.1.5. Data insights for Twitter
+ - Data: tweets
+ - Services: Text classification, entity extraction, keyword extraction
+ - Watson-specific: NLC and Alchemy Language
