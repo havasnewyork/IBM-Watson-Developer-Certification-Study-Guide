@@ -16,7 +16,7 @@ A Study Guide for Exam C7020-230 - IBM Watson V3 Application Development
  - [1.10 Explain difference between ground truth and corpus.](#110-explain-difference-between-ground-truth-and-corpus)
  - [1.11 Define the difference between the user question and the user intent.](#111-define-the-difference-between-the-user-question-and-the-user-intent)
 
-- [Section 2 - Use Cases of Cognitive Services](#section-2---use-cases-of-cognitive-Services)
+- [Section 2 - Use Cases of Cognitive Services](#section-2---use-cases-of-cognitive-services)
  - [2.1 Select appropriate combination of cognitive technologies based on use-case and data format.](#21-select-appropriate-combination-of-cognitive-technologies-based-on-use-case-and-data-format)
  - 2.2 Explain the uses of the Watson services in the Application Starter Kits.
  - 2.3 Describe the Watson Conversational Agent.
