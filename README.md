@@ -1,4 +1,4 @@
-# IBM Watson Professional Developer Certification Study Guide
+# IBM Watson Developer Certification Study Guide
 A Study Guide for Exam C7020-230 - IBM Watson V3 Application Development
 
 ## High-level Exam Objectives
