@@ -344,7 +344,7 @@ To answer correctly, we need to understand the intent behind the question, in or
 ### 2.2. Explain the uses of the Watson services in the Application Starter Kits.
 ### 2.3. Describe the Watson Conversational Agent.
 
-For this section, we deep dive into the Watson services currently available and stated in the study guide. By understanding the services individually, it will help with knowing what services would work for different scenarios. 
+For section 2.2 and 2.3, we deep dive into the Watson services currently available and stated in the study guide. By understanding the services individually, it will help with knowing what services would work for different scenarios. 
 
 [You can view the list of Watson Starter Kits here](https://www.ibm.com/watson/developercloud/starter-kits.html)
 
