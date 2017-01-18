@@ -20,8 +20,8 @@ The aim of this document is to provide a more consolidated view of the required 
 
 - [Section 2 - Use Cases of Cognitive Services](#section-2---use-cases-of-cognitive-services)
  - [2.1 Select appropriate combination of cognitive technologies based on use-case and data format.](#21-select-appropriate-combination-of-cognitive-technologies-based-on-use-case-and-data-format)
- - [2.2 Explain the uses of the Watson services in the Application Starter Kits.]
- - 2.3 Describe the Watson Conversational Agent.
+ - [2.2 Explain the uses of the Watson services in the Application Starter Kits.](#22-explain-the-uses-of-the-watson-services-in-the-application-starter-kits)
+ - [2.3 Describe the Watson Conversational Agent.](#22-explain-the-uses-of-the-watson-services-in-the-application-starter-kits)
  - 2.4 Explain use cases for integrating external systems (such as Twitter, Weather API).
 
 - Section 3 – Fundamentals of IBM Watson Developer Cloud
@@ -343,3 +343,9 @@ To answer correctly, we need to understand the intent behind the question, in or
  
 ### 2.2. Explain the uses of the Watson services in the Application Starter Kits.
 ### 2.3. Describe the Watson Conversational Agent.
+
+For this section, we deep dive into the Watson services currently available and stated in the study guide. By understanding the services individually, it will help with knowing what services would work for different scenarios. 
+
+[You can view the list of Watson Starter Kits here](https://www.ibm.com/watson/developercloud/starter-kits.html)
+
+
