@@ -20,7 +20,7 @@ The aim of this document is to provide a more consolidated view of the required 
 
 - [Section 2 - Use Cases of Cognitive Services](#section-2---use-cases-of-cognitive-services)
  - [2.1 Select appropriate combination of cognitive technologies based on use-case and data format.](#21-select-appropriate-combination-of-cognitive-technologies-based-on-use-case-and-data-format)
- - 2.2 Explain the uses of the Watson services in the Application Starter Kits.
+ - [2.2 Explain the uses of the Watson services in the Application Starter Kits.]
  - 2.3 Describe the Watson Conversational Agent.
  - 2.4 Explain use cases for integrating external systems (such as Twitter, Weather API).
 
@@ -342,3 +342,4 @@ To answer correctly, we need to understand the intent behind the question, in or
  - Watson-specific: NLC and Alchemy Language
  
 ### 2.2. Explain the uses of the Watson services in the Application Starter Kits.
+### 2.3. Describe the Watson Conversational Agent.
