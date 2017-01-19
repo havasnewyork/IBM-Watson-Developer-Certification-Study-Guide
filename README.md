@@ -1,7 +1,15 @@
 # IBM Watson Developer Certification Study Guide
 A Study Guide for Exam C7020-230 - IBM Watson V3 Application Development
 
-The aim of this document is to provide a more consolidated view of the required reading and study that is outlined in the [IBM Watson Professional Certification Program Study Guide Series](http://public.dhe.ibm.com/partnerworld/pub/certify/Study_Guide_C7020_230.pdf?webSyncID=c9369987-7a44-4555-91ff-e252371955d8&sessionGUID=8692aaa8-3daf-4549-9f8e-f9bff718a0e2). 
+Learn about Watson
+The certification exam covers all of the aspects of building an application that uses Watson services. This includes a basic understanding of cognitive technologies, as well as a practical knowledge of the core APIs. Get up to speed with these resources:
+- [Cognitive Computing Primer](http://ibm.co/2k5PAxf)
+- [Watson Developer Cloud API Documentation](http://ibm.co/2jEaYwD)
+
+The aim of this document is to provide a more consolidated view of the required reading and study that is outlined in the [IBM Watson Professional Certification Program Study Guide Series](http://ibm.co/2iYtyP9). 
+
+### [Check out and play with Watson services on Bluemix](http://bit.ly/2jtpOUB)
+
 
 ## High-level Exam Objectives
 
