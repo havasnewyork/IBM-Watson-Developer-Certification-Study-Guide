@@ -5,7 +5,7 @@ The certification exam covers all of the aspects of building an application that
 - [Cognitive Computing Primer](http://ibm.co/2k5PAxf)
 - [Watson Developer Cloud API Documentation](http://ibm.co/2jEaYwD)
 
-The aim of this document is to provide a more consolidated view of the required reading and study that is outlined in the [IBM Watson Professional Certification Program Study Guide Series](http://ibm.co/2iYtyP9). 
+The aim of this doc is to provide a more consolidated view of the required reading and study that is outlined in the [IBM Watson Professional Certification Program Study Guide Series](http://ibm.co/2iYtyP9). 
 
 [![IBM Bluemix](http://watson.codes/logo-bluemix-50.png)](http://ibm.co/2jdqk8s)
 ### [Check out and play with Watson services on Bluemix](http://bit.ly/2jtpOUB)
