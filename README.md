@@ -8,7 +8,7 @@ The certification exam covers all of the aspects of building an application that
 
 The aim of this document is to provide a more consolidated view of the required reading and study that is outlined in the [IBM Watson Professional Certification Program Study Guide Series](http://ibm.co/2iYtyP9). 
 
-[!IBM Bluemix](http://topcoder.mybluemix.net/images/logo-bluemix.png)(http://ibm.co/2jdqk8s)
+[![IBM Bluemix](http://topcoder.mybluemix.net/images/logo-bluemix.png)](http://ibm.co/2jdqk8s)
 ### [Check out and play with Watson services on Bluemix](http://bit.ly/2jtpOUB)
 
 
