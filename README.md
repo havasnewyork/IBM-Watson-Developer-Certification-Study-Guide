@@ -296,6 +296,12 @@ A number of metrics are used in ML to measure the predictive accuracy of a model
 
 ### 1.8. Perform Domain Adaption using Watson Knowledge Studio (WKS).
 
+There is a great YouTube video series for Watson Knowledge Studio here:
+
+Video:
+[![Teach Watson with Watson Knowledge Studio](https://i.ytimg.com/vi/XBwpU97D5aE/maxresdefault.jpg)](https://www.youtube.com/watch?v=XBwpU97D5aE?v=VID)
+[Teach Watson with Watson Knowledge Studio](https://www.youtube.com/watch?v=XBwpU97D5aE?v=VID)
+
 ### 1.9. Define Intents and Classes.
 
 - The Natural Language Classifier service available via WDC, enables clustering or classification based on some measure of inherent similarity or distance given the input data. Such clustering is known as intents or classes.
