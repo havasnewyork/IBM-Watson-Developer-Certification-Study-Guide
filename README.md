@@ -302,6 +302,36 @@ Video:
 [![Teach Watson with Watson Knowledge Studio](https://i.ytimg.com/vi/XBwpU97D5aE/maxresdefault.jpg)](https://www.youtube.com/watch?v=XBwpU97D5aE?v=VID)
 [Teach Watson with Watson Knowledge Studio](https://www.youtube.com/watch?v=XBwpU97D5aE?v=VID)
 
+IBM Watson Knowledge Studio is a cloud-based application that enables developers and domain experts to collaborate on the creation of custom annotator components that can be used to identify mentions and relations in unstructured text.
+Watson Knowledge Studio is:
+- Intuitive: Use a guided experience to teach Watson nuances of natural language without writing a single line of code
+- Collaborative: SMEs work together to infuse domain knowledge in cognitive applications
+
+Use Watson™ Knowledge Studio to create a machine-learning model that understands the linguistic nuances, meaning, and relationships specific to your industry.
+
+To become a subject matter expert in a given industry or domain, Watson must be trained. You can facilitate the task of training Watson with Watson Knowledge Studio. It provides easy-to-use tools for annotating unstructured domain literature, and uses those annotations to create a custom machine-learning model that understands the language of the domain. The accuracy of the model improves through iterative testing, ultimately resulting in an algorithm that can learn from the patterns that it sees and recognize those patterns in large collections of new documents.
+
+The following diagram illustrates how it works.
+[![Watson™ Knowledge Studio](https://www.ibm.com/watson/developercloud/doc/wks/images/wks-ovw-anno.png)]
+
+1. Based on a set of domain-specific source documents, the team creates a type system that defines entity types and relation types for the information of interest to the application that will use the model.
+2. A group of two or more human annotators annotate a small set of source documents to label words that represent entity types, words that represent relation types between entity mentions, and to identify coreferences of entity types. Any inconsistencies in annotation are resolved, and one set of optimally annotated documents is built, which forms the ground truth.
+3. The ground truth is used to train a model.
+4. The trained model is used to find entities, relations, and coreferences in new, never-seen-before documents.
+
+Deliver meaningful insights to users by deploying a trained model in other Watson cloud-based offerings and cognitive solutions.
+
+Watson services integration
+
+Share domain artifacts and models between IBM Watson Knowledge Studio and other Watson services.
+
+Use Watson Knowledge Studio to perform the following tasks:
+- Bootstrap annotation by using the AlchemyLanguage entity extraction service to automatically find and annotate entities in your documents. When human annotators begin to annotate the documents, they can see the annotations that were already made by the service and can review and add to them. See Pre-annotating documents with IBM AlchemyLanguage for details.
+- Import industry-specific dictionaries that you downloaded from IBM® Bluemix® Analytics Exchange.
+- Import analyzed documents that are in UIMA CAS XMI format. For example, you can import UIMA CAS XMI files that were exported from IBM Watson Explorer content analytics collections or IBM Watson Explorer Content Analytics Studio.
+- Deploy a trained model to use with the AlchemyLanguage service.
+- Export a trained model to use in IBM Watson Explorer.
+
 ### 1.9. Define Intents and Classes.
 
 - The Natural Language Classifier service available via WDC, enables clustering or classification based on some measure of inherent similarity or distance given the input data. Such clustering is known as intents or classes.
