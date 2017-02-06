@@ -420,7 +420,7 @@ Classes ordered by confidence
 
 ##### How to use the service
 The process of creating and using the classifier:
-[![Natural Language Classifier](https://www.ibm.com/watson/developercloud/doc/natural-language-classifier/images/classifier_process.png)]
+![Natural Language Classifier](https://www.ibm.com/watson/developercloud/doc/natural-language-classifier/images/classifier_process.png)
 
 ##### CSV training data file format
 Make sure that your CSV training data adheres to the following format requirements:
@@ -586,7 +586,7 @@ With the IBM Watson™ Conversation service, you can create an application that 
 
 This diagram shows the overall architecture of a complete solution:
 
-[![Watson Conversation](https://www.ibm.com/watson/developercloud/doc/conversation/images/conversation_arch_overview.png)]
+![Watson Conversation](https://www.ibm.com/watson/developercloud/doc/conversation/images/conversation_arch_overview.png)
 
 - Users interact with your application through the user interface that you implement. For example, A simple chat window or a mobile app, or even a robot with a voice interface.
 - The application sends the user input to the Conversation service.
@@ -673,7 +673,7 @@ The IBM Watson™ Retrieve and Rank service combines two information retrieval c
 ##### How to use the service
 The following image shows the process of creating and using the Retrieve and Rank service:
 
-[!(https://www.ibm.com/watson/developercloud/doc/retrieve-rank/images/retrieve_rank_process.png)]
+![RR](https://www.ibm.com/watson/developercloud/doc/retrieve-rank/images/retrieve_rank_process.png)
 
 For a step-by-step overview of using the Retrieve and Rank service, [see the Tutorial page.](https://www.ibm.com/watson/developercloud/doc/retrieve-rank/tutorial.shtml)
 
@@ -701,3 +701,26 @@ The Retrieve and Rank service can improve information retrieval as compared to s
 As previously mentioned, the Retrieve part of the Retrieve and Rank service is based on Apache Solr. When you use Retrieve and Rank, you need to be knowledgeable about Solr as well as about the specifics of the Retrieve and Rank service. For example, when Solr passes an error code to the service, the service passes it to your application without modification so that standard Solr clients can correctly parse and act upon it. You therefore need to know about Solr error codes when writing error-handling routines in your Retrieve and Rank application.
 
 More detailed documentation for [Retrieve and Rank](https://www.ibm.com/watson/developercloud/doc/retrieve-rank/)
+
+### [Speech to Text](https://www.ibm.com/watson/developercloud/doc/speech-to-text/)
+
+Watson Speech to Text can be used anywhere there is a need to bridge the gap between the spoken word and its written form. This easy-to-use service uses machine intelligence to combine information about grammar and language structure with knowledge of the composition of an audio signal to generate an accurate transcription. It uses IBM's speech recognition capabilities to convert speech in multiple languages into text. The transcription of incoming audio is continuously sent back to the client with minimal delay, and it is corrected as more speech is heard. Additionally, the service now includes the ability to detect one or more keywords in the audio stream. The service is accessed via a WebSocket connection or REST API.
+
+##### Intended Use
+
+The Speech to Text service can be used anywhere voice-interactivity is needed. The service is great for mobile experiences, transcribing media files, call center transcriptions, voice control of embedded systems, or converting sound to text to then make data searchable. Supported languages include US English, UK English, Japanese, Spanish, Brazilian Portuguese, Modern Standard Arabic, and Mandarin. The Speech to Text service now provides the ability to detect the presence of specific keywords or key phrases in the input stream.
+
+##### You input
+
+Streamed audio with Intelligible Speech
+Recorded audio with Intelligible Speech
+
+##### Service output
+
+Text transcriptions of the audio with recognized words
+
+##### Continuous transmission
+ 
+By default, the service stops transcription at the first end-of-speech (EOS) incident, which is denoted by a half-second of non-speech (typically silence) or when the stream terminates. Set the continuous parameter to true to instruct the service to transcribe the entire audio stream until the stream terminates. In this case, the results can include multiple transcript elements to indicate phrases separated by pauses. You can concatenate the transcript elements to assemble the complete transcription of the audio stream.
+
+More detailed documentation for [Speech to Text](https://www.ibm.com/watson/developercloud/doc/speech-to-text/)
