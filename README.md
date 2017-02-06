@@ -392,7 +392,7 @@ For section 2.2 and 2.3, we deep dive into the Watson services currently availab
 
 [You can view the list of Watson Starter Kits here](https://www.ibm.com/watson/developercloud/starter-kits.html)
 
-#### [Natural Language Classifier](https://www.ibm.com/watson/developercloud/doc/natural-language-classifier/index.html)
+### [Natural Language Classifier](https://www.ibm.com/watson/developercloud/doc/natural-language-classifier/index.html)
 
 The IBM Watson™ Natural Language Classifier service uses machine learning algorithms to return the top matching predefined classes for short text inputs. The service interprets the intent behind text and returns a corresponding classification with associated confidence levels. The return value can then be used to trigger a corresponding action, such as redirecting the request or answering a question.
 
@@ -455,7 +455,7 @@ The following guidelines are not enforced by the API. However, the classifier te
 
 [More detailed documentation for Natural Language Classifier](https://www.ibm.com/watson/developercloud/doc/natural-language-classifier/index.html)
 
-#### AlchemyLanguage
+### [AlchemyLanguage](https://www.ibm.com/watson/developercloud/doc/alchemylanguage/)
 
 AlchemyLanguage is a collection of APIs that offer text analysis through natural language processing. The AlchemyLanguage APIs can analyze text and help you to understand its sentiment, keywords, entities, high-level concepts and more.
 
@@ -481,7 +481,9 @@ Any publicly-accessible webpage or posted HTML/text document.
 ##### Service output
 Extracted meta-data including, entities, sentiment, keywords, concepts, relations, authors, and more, returned in XML, JSON, and RDF formats
 
-#### AlchemyData News
+More detailed documention for [AlchemyLanguage](https://www.ibm.com/watson/developercloud/doc/alchemylanguage/)
+
+### [AlchemyData News](https://www.ibm.com/watson/developercloud/doc/alchemydata-news/)
 
 AlchemyData provides news and blog content enriched with natural language processing to allow for highly targeted search and trend analysis. Now you can query the world's news sources and blogs like a database.
 
@@ -500,7 +502,9 @@ Build a query with natural language processing to search both the text in indexe
 News and blog content enriched with our full suite of NLP services.
 Keywords, Entities, Concepts, Relations, Sentiment, Taxonomy
 
-#### Tone Analyzer
+More detailed documentation for [AlchemyData News](https://www.ibm.com/watson/developercloud/doc/alchemydata-news/)
+
+### [Tone Analyzer](https://www.ibm.com/watson/developercloud/doc/tone-analyzer/index.html)
 
 The IBM Watson™ Tone Analyzer Service uses linguistic analysis to detect three types of tones from text: emotion, social tendencies, and language style. Emotions identified include things like anger, fear, joy, sadness, and disgust. Identified social tendencies include things from the Big Five personality traits used by some psychologists. These include openness, conscientiousness, extroversion, agreeableness, and emotional range. Identified language styles include confident, analytical, and tentative.
 
@@ -518,3 +522,42 @@ Any Text
 
 ##### Service output
 JSON that provides a hierarchical representation of the analysis of the terms in the input message
+
+Mored detailed documentation for [Tone Analyzer](https://www.ibm.com/watson/developercloud/doc/tone-analyzer/index.html)
+
+### [Watson Dialog](https://www.ibm.com/watson/developercloud/doc/dialog/) 
+Deprecated as of August 15, 2016 still in the test
+
+The IBM Watson Dialog service enables a developer to automate branching conversations between a user and your application. The Dialog service enables your applications to use natural language to automatically respond to user questions, cross-sell and up-sell, walk users through processes or applications, or even hand-hold users through difficult tasks. The Dialog service can track and store user profile information to learn more about end users, guide them through processes based on their unique situation, or pass their information to a back-end system to help them take action and get the help they need.
+
+##### Intended Use
+
+Walk a user through the steps to reset their password or help them choose a credit card. Developers script conversations as they would happen in the real world, upload them to the Dialog application and allow end users to get the help they need. This service should be used to enable back and forth conversations with a user. For example, clarifying questions, information gathering, walkthroughs and helping a user take an action.
+
+##### You input
+
+Script conversations based on your expert knowledge of the domain.
+
+##### Service output
+
+End users can chat with your application using natural language and get the pre-written responses you created.
+
+More detailed documentation for [Watson Dialog](https://www.ibm.com/watson/developercloud/doc/dialog/) 
+
+### [Tradeoff Analytics](https://www.ibm.com/watson/developercloud/doc/tradeoff-analytics/)
+
+Tradeoff Analytics is a Watson service that helps people make decisions when balancing multiple objectives. The service uses a mathematical filtering technique called “Pareto Optimization,” that enables users to explore tradeoffs when considering multiple criteria for a single decision. When your company makes decisions, how many factors need to be considered? What’s the process like? How do you know when you’ve found the best option? With Tradeoff Analytics, users can avoid lists of endless options and identify the right option by considering multiple objectives.
+
+##### Intended Use
+
+Tradeoff Analytics can help bank analysts or wealth managers select the best investment strategy based on performance attributes, risk, and cost. It can help consumers purchase the product that best matches their preferences based on attributes like features, price, or warranties. Additionally, Tradeoff Analytics can help physicians find the most suitable treatment based on multiple criteria such as success rate, effectiveness, or adverse effects.
+
+##### You input
+
+A decision problem with objectives and options (for example, what is the best car when my goals are type, price, and fuel economy?)
+
+##### Service output
+
+JSON objects that represent the optimal options and highlight the trade-offs between them. The service recommends using a provided client-side library to consume its JSON output.
+
+For more detailed documentation for [Tradeoff Analytics](https://www.ibm.com/watson/developercloud/doc/tradeoff-analytics/)
