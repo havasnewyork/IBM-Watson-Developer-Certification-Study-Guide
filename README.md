@@ -392,4 +392,129 @@ For section 2.2 and 2.3, we deep dive into the Watson services currently availab
 
 [You can view the list of Watson Starter Kits here](https://www.ibm.com/watson/developercloud/starter-kits.html)
 
+#### [Natural Language Classifier](https://www.ibm.com/watson/developercloud/doc/natural-language-classifier/index.html)
 
+The IBM Watson™ Natural Language Classifier service uses machine learning algorithms to return the top matching predefined classes for short text inputs. The service interprets the intent behind text and returns a corresponding classification with associated confidence levels. The return value can then be used to trigger a corresponding action, such as redirecting the request or answering a question.
+
+##### Intended Use
+
+The Natural Language Classifier is tuned and tailored to short text (1000 characters or less) and can be trained to function in any domain or application.
+
+- Tackle common questions from your users that are typically handled by a live agent.
+- Classify SMS texts as personal, work, or promotional
+- Classify tweets into a set of classes, such as events, news, or opinions.
+- Based on the response from the service, an application can control the outcome to the user. For example, you can start another application, respond with an answer, begin a dialog, or any number of other possible outcomes.
+
+Here are some other examples of how you might apply the Natural Language Classifier:
+- Twitter, SMS, and other text messages
+ - Classify tweets into a set of classes, such as events, news, or opinions.
+ -  Analyze text messages into categories, such as Personal, Work, or Promotions.
+- Sentiment analysis
+ - Analyze text from social media or other sources and identify whether it relates positively or negatively to an offering or service.
+
+##### You input
+Text to a pre-trained model
+
+##### Service output
+Classes ordered by confidence
+
+##### How to use the service
+The process of creating and using the classifier:
+[![Natural Language Classifier](https://www.ibm.com/watson/developercloud/doc/natural-language-classifier/images/classifier_process.png)]
+
+##### CSV training data file format
+Make sure that your CSV training data adheres to the following format requirements:
+- The data must be UTF-8 encoded.
+- Separate text values and each class value by a comma delimiter. Each record (row) is terminated by an end-of-line character, which is a special character or sequence of characters that indicate the end of a line.
+- Each record must have one text value and at least one class value.
+- Class values cannot include tabs or end-of-line characters.
+- Text values cannot contain tabs or new lines without special handling. To preserve tabs or new lines, escape a tab with \t, and escape new lines with \r, \n or \r\n.
+- For example, Example text\twith a tab is valid, but Example text    with a tab is not valid.
+- Always enclose text or class values with double quotation marks in the training data when it includes the following characters:
+- Commas ("Example text, with comma").
+- Double quotation marks. In addition, quotation marks must be escaped with double quotation marks ("Example text with ""quotation""").
+
+##### Size limitations
+There are size limitations to the training data:
+- The training data must have at least five records (rows) and no more than 15,000 records.
+- The maximum total length of a text value is 1024 characters.
+
+##### Supported languages
+
+The classifier supports English (en), Arabic (ar), French (fr), German (de), Japanese (ja), Italian (it), Portuguese (pt), and Spanish (es). The language of the training data must match the language of the text that you intend to classify. Specify the language when you create the classifier.
+
+##### Guidelines for good training
+The following guidelines are not enforced by the API. However, the classifier tends to perform better when the training data adheres to them:
+- Limit the length of input text to fewer than 60 words.
+- Limit the number of classes to several hundred classes. Support for larger numbers of classes might be included in later versions of the service.
+- When each text record has only one class, make sure that each class is matched with at least 5 - 10 records to provide enough training on that class.
+- It can be difficult to decide whether to include multiple classes for a text. Two common reasons drive multiple classes:
+- When the text is vague, identifying a single class is not always clear.
+- When experts interpret the text in different ways, multiple classes support those interpretations.
+- However, if many texts in your training data include multiple classes, or if some texts have more than three classes, you might need to refine the classes. For example, review whether the classes are hierarchical. If they are hierarchical, include the leaf node as the class.
+
+[More detailed documentation for Natural Language Classifier](https://www.ibm.com/watson/developercloud/doc/natural-language-classifier/index.html)
+
+#### AlchemyLanguage
+
+AlchemyLanguage is a collection of APIs that offer text analysis through natural language processing. The AlchemyLanguage APIs can analyze text and help you to understand its sentiment, keywords, entities, high-level concepts and more.
+
+##### Intended Use
+Use one or all of the natural language processing APIs available through AlchemyLanguage to add high-level semantic information. Browse the documentation to learn more about each of AlchemyAPI's text analysis service functions:
+- Entity Extraction
+- Sentiment Analysis
+- Emotion Analysis
+- Keyword Extraction
+- Concept Tagging
+- Relation Extraction
+- Taxonomy Classification
+- Author Extraction
+- Language Detection
+- Text Extraction
+- Microformats Parsing
+- Feed Detection
+- Linked Data Support
+
+##### You input
+Any publicly-accessible webpage or posted HTML/text document.
+
+##### Service output
+Extracted meta-data including, entities, sentiment, keywords, concepts, relations, authors, and more, returned in XML, JSON, and RDF formats
+
+#### AlchemyData News
+
+AlchemyData provides news and blog content enriched with natural language processing to allow for highly targeted search and trend analysis. Now you can query the world's news sources and blogs like a database.
+
+AlchemyData News indexes 250k to 300k English language news and blog articles every day with historical search available for the past 60 days. You can query the News API directly with no need to acquire, enrich and store the data yourself - enabling you to go beyond simple keyword-based searches.
+
+##### Intended Use
+
+Highly targeted search, time series and counts for trend analysis and pattern mapping, and historical access to news and blog content.
+
+##### You input
+
+Build a query with natural language processing to search both the text in indexed content and the concepts that are associated with it.
+
+##### Service output
+
+News and blog content enriched with our full suite of NLP services.
+Keywords, Entities, Concepts, Relations, Sentiment, Taxonomy
+
+#### Tone Analyzer
+
+The IBM Watson™ Tone Analyzer Service uses linguistic analysis to detect three types of tones from text: emotion, social tendencies, and language style. Emotions identified include things like anger, fear, joy, sadness, and disgust. Identified social tendencies include things from the Big Five personality traits used by some psychologists. These include openness, conscientiousness, extroversion, agreeableness, and emotional range. Identified language styles include confident, analytical, and tentative.
+
+##### Intended Use
+
+##### Common uses for the Tone Analyzer service include:
+
+- Personal and business communications - Anyone could use the Tone Analyzer service to get feedback about their communications, which could improve the effectiveness of the messages and how they are received.
+- Message resonance - optimize the tones in your communication to increase the impact on your audience
+- Digital Virtual Agent for customer care - If a human client is interacting with an automated digital agent, and the client is agitated or angry, it is likely reflected in the choice of words they use to explain their problem. An automated agent could use the Tone Analyzer Service to detect those tones, and be programmed to respond appropriately to them.
+- Self-branding - Bloggers and journalists could use the Tone Analyzer Service to get feedback on their tone and fine-tune their writing to reflect a specific personality or style.
+
+##### You input
+Any Text
+
+##### Service output
+JSON that provides a hierarchical representation of the analysis of the terms in the input message
