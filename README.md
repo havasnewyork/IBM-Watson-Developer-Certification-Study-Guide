@@ -2,7 +2,7 @@
 
 A one page study guide for the below Watson Certification exam:
 
-[A Study Guide for Exam C7020-230 - IBM Watson V3 Application Development](http://ibm.co/2liIJG1)
+[Exam Test C7020-230 - IBM Watson V3 Application Development](http://ibm.co/2liIJG1)
 
 The certification exam covers all of the aspects of building an application that uses Watson services. This includes a basic understanding of cognitive technologies, as well as a practical knowledge of the core APIs. Get up to speed with these resources:
 - [Cognitive Computing Primer](http://ibm.co/2k5PAxf)
