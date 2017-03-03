@@ -35,7 +35,7 @@ The Watson services are constantly evolving so always reference back to the [Wat
  - [2.1 Select appropriate combination of cognitive technologies based on use-case and data format.](#21-select-appropriate-combination-of-cognitive-technologies-based-on-use-case-and-data-format)
  - [2.2 Explain the uses of the Watson services in the Application Starter Kits.](#22-explain-the-uses-of-the-watson-services-in-the-application-starter-kits)
  - [2.3 Describe the Watson Conversational Agent.](#22-explain-the-uses-of-the-watson-services-in-the-application-starter-kits)
- - 2.4 Explain use cases for integrating external systems (such as Twitter, Weather API).
+ - [2.4 Explain use cases for integrating external systems (such as Twitter, Weather API).](#24-explain-use-cases-for-integrating-external-systems-such-as-twitter-weather-api)
 
 - Section 3 – Fundamentals of IBM Watson Developer Cloud
  - 3.1 Distinguish cognitive services on WDC for which training is required or not.
@@ -736,3 +736,23 @@ When systems communicate with each other, this is considered Internet of Things
 - [Explain the components of systems communicating with one another](https://console.ng.bluemix.net/docs/services/IoT/index.html)
 - [Use case of Twitter and sentiment analysis](https://www.ibm.com/blogs/bluemix/2016/06/cognitive-apis-with-watson-sentiment-analysis/)
 - [Use case of the Weather APIs and mission critical decision that are impacted by weather](https://www.ibm.com/blogs/bluemix/2015/10/ibm-insights-weather-available-in-bluemix/?HavasWatsonStudyGuide)
+
+# Section 3 – Fundamentals of IBM Watson Developer Cloud
+
+### 3.1. Distinguish cognitive services on WDC for which training is required or not.
+
+Some IBM Watson services work out-of-the-box as they were pre-trained in a specific domain (domain-adapted). Other Watson services require training. For pre-trained services, it’s critical to know the adapted domains as they indicate the areas in which the service will perform best.
+
+Pre-trained Watson services:
+- Watson Text-to-Speech
+- Watson Speech-to-text
+- Language Translation (conversational, news, and patent domains)
+- Alchemy Language (open-domain)
+- Watson Visual Insights
+- Tone Analyzer
+- Personality Insights (social media domain)
+
+Services requiring training:
+- Natural Language Classifier
+- Rank part of Retrieve and Rank
+- Visual recognition (custom models)
