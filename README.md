@@ -58,12 +58,12 @@ The Watson services are constantly evolving so always reference back to the [Wat
  - [4.5 Design and execute a use case driven service choreography (within an API).](#45-design-and-execute-a-use-case-driven-service-choreography-within-an-api)
  - [4.6 Deploy a web application to IBM Bluemix.](#46-deploy-a-web-application-to-ibm-bluemix)
 
-- Section 5 - Administration & DevOps for applications using IBM Watson Developer Cloud Services
+- [Section 5 - Administration & DevOps for applications using IBM Watson Developer Cloud Services](#section-5---administration--devops-for-applications-using-ibm-watson-developer-cloud-services)
 
- - 5.1 Describe the process of obtaining credentials for Watson services.
- - 5.2 Monitor resource utilization of applications using IBM Watson services.
- - 5.3 Monitoring application performance on IBM Bluemix.
- - 5.4 Examine application logs provided on IBM Bluemix.
+ - [5.1 Describe the process of obtaining credentials for Watson services.](#51-describe-the-process-of-obtaining-credentials-for-watson-services)
+ - [5.2 Monitor resource utilization of applications using IBM Watson services.](#52-monitor-resource-utilization-of-applications-using-ibm-watson-services)
+ - [5.3 Monitoring application performance on IBM Bluemix.](#53-monitoring-application-performance-on-ibm-bluemix)
+ - [5.4 Examine application logs provided on IBM Bluemix.](#54-examine-application-logs-provided-on-ibm-bluemix)
 
 
 ## Section 1 - Fundamentals of Cognitive Computing
