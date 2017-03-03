@@ -39,24 +39,24 @@ The Watson services are constantly evolving so always reference back to the [Wat
 
 - [Section 3 – Fundamentals of IBM Watson Developer Cloud](#section-3--fundamentals-of-ibm-watson-developer-cloud)
  - [3.1 Distinguish cognitive services on WDC for which training is required or not.](#31-distinguish-cognitive-services-on-wdc-for-which-training-is-required-or-not)
- - 3.2 Provide examples of text classification using the NLC.
- - 3.3 Explain the Watson SDKs available as part of the services on Watson Developer Cloud.
- - 3.4 Explain the Watson REST APIs available as part of the services on Watson Developer Cloud.
- - 3.5 Explain and configure Natural Language Classification.
- - 3.6 Explain and configure Visual recognition.
- - 3.7 Explain how Personality Insights service works.
- - 3.8 Explain how Tone Analyzer service works.
- - 3.9 Explain and execute Alchemy Language services.
- - 3.10 Explain and configure Retrieve and Rank service.
+ - [3.2 Provide examples of text classification using the NLC.](#32-provide-examples-of-text-classification-using-the-nlc)
+ - [3.3 Explain the Watson SDKs available as part of the services on Watson Developer Cloud.](#33-explain-the-watson-sdks-available-as-part-of-the-services-on-watson-developer-cloud)
+ - [3.4 Explain the Watson REST APIs available as part of the services on Watson Developer Cloud.](#34-explain-the-watson-rest-apis-available-as-part-of-the-services-on-watson-developer-cloud)
+ - [3.5 Explain and configure Natural Language Classification.](#35-explain-and-configure-natural-language-classification)
+ - [3.6 Explain and configure Visual recognition.](#36-explain-and-configure-visual-recognition)
+ - [3.7 Explain how Personality Insights service works.](#37-explain-how-personality-insights-service-works)
+ - [3.8 Explain how Tone Analyzer service works.](#39-explain-and-execute-alchemy-language-services)
+ - [3.9 Explain and execute Alchemy Language services.](#39-explain-and-execute-alchemy-language-services)
+ - [3.10 Explain and configure Retrieve and Rank service.](#310-explain-and-configure-retrieve-and-rank-service)
 
-- Section 4 - Developing Cognitive applications using Watson Developer Cloud Services
+- [Section 4 - Developing Cognitive applications using Watson Developer Cloud Services](#section-4---developing-cognitive-applications-using-watson-developer-cloud-services)
  
- - 4.1 Call a Watson API to analyze content.
- - 4.2 Describe the tasks required to implement the Conversational Agent / Digital Bot.
- - 4.3 Transform service outputs for consumption by other services.
- - 4.4 Define common design patterns for composing multiple Watson services together (across APIs).
- - 4.5 Design and execute a use case driven service choreography (within an API).
- - 4.6 Deploy a web application to IBM Bluemix.
+ - [4.1 Call a Watson API to analyze content.](#41-call-a-watson-api-to-analyze-content)
+ - [4.2 Describe the tasks required to implement the Conversational Agent / Digital Bot.](#42-describe-the-tasks-required-to-implement-the-conversational-agent--digital-bot)
+ - [4.3 Transform service outputs for consumption by other services.](/#43-transform-service-outputs-for-consumption-by-other-services)
+ - [4.4 Define common design patterns for composing multiple Watson services together (across APIs).](#44-define-common-design-patterns-for-composing-multiple-watson-services-together-across-apis)
+ - [4.5 Design and execute a use case driven service choreography (within an API).](#45-design-and-execute-a-use-case-driven-service-choreography-within-an-api)
+ - [4.6 Deploy a web application to IBM Bluemix.](#46-deploy-a-web-application-to-ibm-bluemix)
 
 - Section 5 - Administration & DevOps for applications using IBM Watson Developer Cloud Services
 
@@ -737,7 +737,7 @@ When systems communicate with each other, this is considered Internet of Things
 - [Use case of Twitter and sentiment analysis](https://www.ibm.com/blogs/bluemix/2016/06/cognitive-apis-with-watson-sentiment-analysis/)
 - [Use case of the Weather APIs and mission critical decision that are impacted by weather](https://www.ibm.com/blogs/bluemix/2015/10/ibm-insights-weather-available-in-bluemix/?HavasWatsonStudyGuide)
 
-# Section 3 – Fundamentals of IBM Watson Developer Cloud
+## Section 3 – Fundamentals of IBM Watson Developer Cloud
 
 ### 3.1. Distinguish cognitive services on WDC for which training is required or not.
 
@@ -866,7 +866,7 @@ Configure:
  - Create and train Ranker
  - Evaluate result / update ground truth
  
-# Section 4 - Developing Cognitive applications using Watson Developer Cloud Services
+## Section 4 - Developing Cognitive applications using Watson Developer Cloud Services
 
 ###  4.1. Call a Watson API to analyze content.
 - Alchemy Language
@@ -966,3 +966,36 @@ Cognitive systems tend to gain more value as additional services are composed. W
  - Log-in to IBM Bluemix from the command line
  - Push the application to IBM Bluemix using the Cloud Foundry command line tools
  
+## Section 5 - Administration & DevOps for applications using IBM Watson Developer Cloud Services
+
+### 5.1. Describe the process of obtaining credentials for Watson services.
+
+- [Use the Bluemix web interface](http://ibm.co/2jdqk8s)
+- [Get service credentials in Bluemix](https://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/doc/getting_started/gs-credentials.shtml)
+- [Get service credentials programmatically](https://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/doc/getting_started/gs-credentials.shtml)
+- [Manage organizations, spaces, and assigned users in IBM Bluemix](https://console.ng.bluemix.net/docs/admin/adminpublic.html#administer)
+- [Using tokens with Watson services](https://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/doc/getting_started/gs-tokens.shtml)
+ - Obtain a token
+ - Use a token
+ - Get a token programmatically
+
+### 5.2. Monitor resource utilization of applications using IBM Watson services.
+
+- [Monitor applications running on Cloud Foundry](https://console.ng.bluemix.net/docs/monitor_log/monitoringandlogging.html#monitoring_logging_bluemix_apps)
+- [Monitor applications by using IBM Monitoring and Analytics for Bluemix](https://console.ng.bluemix.net/docs/services/monana/index.html#gettingstartedtemplate)
+
+### 5.3. Monitoring application performance on IBM Bluemix.
+
+- Configure performance monitoring
+- [Monitor performance of applications](https://console.ng.bluemix.net/docs/services/PerformanceInsights/index.html#perfinsght_prfmn_c)
+
+### 5.4. Examine application logs provided on IBM Bluemix.
+
+- [Log for apps running on Cloud Foundry](http://docs.cloudfoundry.org/devguide/deployapps/streaming-logs.html)
+- [View logs from the Bluemix dashboard](https://console.ng.bluemix.net/docs/monitor_log/monitoringandlogging.html#monitoring_logging_bluemix_apps)
+- View logs from the command line interface
+- Filter logs
+- Configure external logs hosts
+- View logs from external logs hosts
+
+
