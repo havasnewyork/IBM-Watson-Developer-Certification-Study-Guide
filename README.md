@@ -37,8 +37,8 @@ The Watson services are constantly evolving so always reference back to the [Wat
  - [2.3 Describe the Watson Conversational Agent.](#22-explain-the-uses-of-the-watson-services-in-the-application-starter-kits)
  - [2.4 Explain use cases for integrating external systems (such as Twitter, Weather API).](#24-explain-use-cases-for-integrating-external-systems-such-as-twitter-weather-api)
 
-- Section 3 – Fundamentals of IBM Watson Developer Cloud
- - 3.1 Distinguish cognitive services on WDC for which training is required or not.
+- [Section 3 – Fundamentals of IBM Watson Developer Cloud](#section-3--fundamentals-of-ibm-watson-developer-cloud)
+ - [3.1 Distinguish cognitive services on WDC for which training is required or not.](#31-distinguish-cognitive-services-on-wdc-for-which-training-is-required-or-not)
  - 3.2 Provide examples of text classification using the NLC.
  - 3.3 Explain the Watson SDKs available as part of the services on Watson Developer Cloud.
  - 3.4 Explain the Watson REST APIs available as part of the services on Watson Developer Cloud.
@@ -756,3 +756,85 @@ Services requiring training:
 - Natural Language Classifier
 - Rank part of Retrieve and Rank
 - Visual recognition (custom models)
+
+### 3.2. Provide examples of text classification using the NLC.
+
+Some examples are:
+- Sentiment analysis
+- Spam email detection
+- Customer message routing
+- Academic paper classification into technical fields of interest
+- Forum post classification to determine correct posting category
+- Patient reports for escalation and routing based on symptoms
+- News article analysis
+- Investment opportunity ranking
+- Web page topic analysis
+
+### 3.3. Explain the Watson SDKs available as part of the services on Watson Developer Cloud.
+
+- Identify the programming languages with SDKs available
+ - [Node SDK](https://www.npmjs.com/package/watson-developer-cloud)
+ - [Java SDK](http://mvnrepository.com/artifact/com.ibm.watson.developer_cloud/java-sdk)
+ - [iOS SDK](https://github.com/watson-developer-cloud/ios-sdk#installation)
+ - [Unity SDK](https://github.com/watson-developer-cloud/unity-sdk#installing-the-sdk-source-into-your-unity-project)
+ - [Python SDK](https://pypi.python.org/pypi/watson-developer-cloud)
+ - [Android SDK](https://github.com/watson-developer-cloud/android-sdk)
+
+- Describe the advantage and disadvantages of using an SDK
+- Find the Watson SDKs and other resources on the WDC GitHub
+  - [Watson Developer Cloud Github](https://github.com/watson-developer-cloud/)
+  
+###  3.4. Explain the Watson REST APIs available as part of the services on Watson Developer Cloud.
+
+- Identify the Language services on WDC
+ - AlchemyLanguage 
+ - Conversation 
+ - Document Conversion 
+ - Language Translator 
+ - Natural Language Classifier 
+ - Natural Language Understanding 
+ - Personality Insights 
+ - Retrieve and Rank 
+ - Tone Analyzer
+- Identify the Vision services on WDC
+ - Visual Recognition
+- Identify the Speech services on WDC
+ - Speech to Text 
+ - Text to Speech
+- Identify the Data Insights services on WDC
+ - AlchemyData News 
+ - Discovery 
+ - Tradeoff Analytics
+ 
+###  3.5. Explain and configure Natural Language Classification.
+
+The service enables developers without a background in machine learning or statistical algorithms to interpret the intent behind text.
+Configure:
+- Gather sample text from real end users (fake initially if you have to…but not much)
+- Determine the users intents that capture the actions/needs expressed in the text
+- Classify your user text into these user intents
+- Separate your user text into train/test datasets
+- Train an NLC classifier on your training dataset
+- Pass the user input to an NLC classifier
+- Determine the accuracy, precision, and recall of the NLC classifier using your test dataset
+- Improve the confidence level iteratively through back propagation or other means. 
+
+###  3.6. Explain and configure Visual recognition.
+
+- Describe the process for training a classifier
+- Explain how to identify images with a specified classifier
+- Describe the capabilities of Face Detection/Recognition
+- Describe the capabilities of Natural Scene OCR
+
+###  3.7. Explain how Personality Insights service works.
+
+- [Describe the intended use of the Personality Insights service](#personality-insights)
+- [Describe the inputs and outputs of the Personality Insights service](https://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/personality-insights.html)
+- [Describe the personality models of the Personality Insights service](https://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/doc/personality-insights/basics.shtml)
+
+###  3.8. Explain how Tone Analyzer service works.
+
+- [Describe the common use cases of the Tone Analyzer service](#tone-analyzer)
+- Describe the basic flow of the Tone Analyzer service
+- [Explain the three categories of tone scores and their sub-tones: emotional tone, social tone, and language tone.](https://www.ibm.com/blogs/watson/2016/02/293/)
+- [Explain how Tone Analyzer service is different from the Alchemy Language - Sentiment Analysis and Emotion Insights service](https://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/doc/tone-analyzer/index.shtml)
