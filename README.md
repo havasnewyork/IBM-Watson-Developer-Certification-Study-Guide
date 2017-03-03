@@ -6,9 +6,11 @@ A one page study guide for the below Watson Certification exam:
 
 The certification exam covers all of the aspects of building an application that uses Watson services. This includes a basic understanding of cognitive technologies, as well as a practical knowledge of the core APIs. Get up to speed with these resources:
 - [Cognitive Computing Primer](http://ibm.co/2k5PAxf)
-- [Watson Developer Cloud API Documentation](http://ibm.co/2jEaYwD)
+- [Watson Developer Cloud API Documentation](http://ibm.co/2mU4Bnp)
 
 The aim of this doc is to provide a more consolidated view of the required reading and study that is outlined in the [IBM Watson Professional Certification Program Study Guide Series](http://ibm.co/2iYtyP9). 
+
+The Watson services are constantly evolving so always reference back to the [Watson Documentation](http://ibm.co/2mU4Bnp). Please also feel free to contribute or provide feedback if you see anything that is incorrect. 
 
 [Watson is accessed through IBM Bluemix](http://ibm.co/2jdqk8s)
 ### [Check out and play with Watson services on Bluemix](http://bit.ly/2jtpOUB)
@@ -727,3 +729,10 @@ Text transcriptions of the audio with recognized words
 By default, the service stops transcription at the first end-of-speech (EOS) incident, which is denoted by a half-second of non-speech (typically silence) or when the stream terminates. Set the continuous parameter to true to instruct the service to transcribe the entire audio stream until the stream terminates. In this case, the results can include multiple transcript elements to indicate phrases separated by pauses. You can concatenate the transcript elements to assemble the complete transcription of the audio stream.
 
 More detailed documentation for [Speech to Text](https://www.ibm.com/watson/developercloud/doc/speech-to-text/)
+
+### 2.4. Explain use cases for integrating external systems (such as Twitter, Weather API).
+
+When systems communicate with each other, this is considered Internet of Things
+- [Explain the components of systems communicating with one another](https://console.ng.bluemix.net/docs/services/IoT/index.html)
+- [Use case of Twitter and sentiment analysis](https://www.ibm.com/blogs/bluemix/2016/06/cognitive-apis-with-watson-sentiment-analysis/)
+- [Use case of the Weather APIs and mission critical decision that are impacted by weather](https://www.ibm.com/blogs/bluemix/2015/10/ibm-insights-weather-available-in-bluemix/?HavasWatsonStudyGuide)
