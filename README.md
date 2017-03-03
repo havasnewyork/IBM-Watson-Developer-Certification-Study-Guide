@@ -838,3 +838,131 @@ Configure:
 - Describe the basic flow of the Tone Analyzer service
 - [Explain the three categories of tone scores and their sub-tones: emotional tone, social tone, and language tone.](https://www.ibm.com/blogs/watson/2016/02/293/)
 - [Explain how Tone Analyzer service is different from the Alchemy Language - Sentiment Analysis and Emotion Insights service](https://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/doc/tone-analyzer/index.shtml)
+
+###  3.9. Explain and execute Alchemy Language services.
+
+- [Identify the capabilities of Alchemy Language](#alchemylanguage)
+- Describe the text extraction features of Alchemy Language
+- Distinguish between keywords, entities, and concepts
+- Distinguish between document-level and targeted sentiment
+- Explain the difference between the taxonomy call and the knowledge graph
+- [Explain disambiguation as it relates to entities](http://www.alchemyapi.com/api/sentiment-analysis)
+- Explain how Emotion Analysis service works
+ - [What emotions does Emotion Analysis detect?](http://www.alchemyapi.com/api/sentiment-analysis)
+ - [Describe the main use cases for applying the Emotion Insights service](http://blog.alchemyapi.com/a-step-closer-to-building-empathetic-systems)
+ - [Describe the main types of positive/negative sentiment extracted from digital text](http://www.alchemyapi.com/api/sentiment/proc.html)
+ - [Describe the API types provided by the Sentiment Analysis service](http://www.alchemyapi.com/api/sentiment/urls.html)
+ - Describe the differences between sentiment and emotion analyses
+
+###  3.10. Explain and configure Retrieve and Rank service.
+
+- [Explain the function of the Retrieve and Rank service](#retrieve-and-rank)
+- Configure the Retrieve and Rank service
+ - Create Solr cluster
+ - Create and upload Solr configuration
+ - Create Solr collection
+ - Upload and index documents
+ - Create / update ground truth
+ - Create and train Ranker
+ - Evaluate result / update ground truth
+ 
+# Section 4 - Developing Cognitive applications using Watson Developer Cloud Services
+
+###  4.1. Call a Watson API to analyze content.
+- Alchemy Language
+ - Create an instance of the Alchemy Language service in Bluemix
+ - Select the correct API to call for text extraction, sentiment analysis, or any of the Alchemy Language services.
+ - Pass your content to your Alchemy services’ endpoint through a RESTful API call
+ - Natural Language Classifier
+ - Gather sample text from real end users (fake initially if you have to…but not much)
+ - Determine the users intents that capture the actions/needs expressed in the text
+ - Classify your user text into these user intents
+ - Separate your user text into train/test datasets
+ - Create an instance of the Natural Language Classifier service in Bluemix
+ - Train an NLC classifier on your training dataset
+ - Pass your content to your NLC services’ endpoint through a RESTful API call
+ - Determine the accuracy, precision, and recall of the NLC classifier using your test dataset
+- Personality Insights
+ - Create an instance of the Personality Insights service in Bluemix
+ - Gather text from users in their own voice
+ - Ensure you meet the minimum limits for word count (currently 5,000 words) to limit sampling error.
+ - Pass your content to your Personality Insight services’ endpoint through a RESTful API call
+
+###  4.2. Describe the tasks required to implement the Conversational Agent / Digital Bot.
+
+- Document the primary conversation flow for your users.
+- Determine ways users could diverge from this flow and how to redirect them back.
+- Determine the primary user intents plus paraphrases at various nodes in your conversation
+- Define profile variables
+- Create instances of Dialog and NLC services on Bluemix
+- Upload these intents plus paraphrases into the NLC Service
+- Build out conversation flow with Dialog Service
+- Present your beta conversation agent to end users to capture real end user text
+- Identify areas where users strayed outside the domain of your conversation agent
+- Identify areas where your conversation agent misunderstood the user
+- Update your conversation agent with new intents plus real end user text
+
+###  4.3. Transform service outputs for consumption by other services.
+
+- Natural Language Classifier
+ - Using classifiers from NLC to drive dialog selections in Dialog
+- Personality Insights
+ - Use the service output from two different textual inputs and compare the personalities based on the results
+- Speech to text
+ - Use the transcribed output from speed to text as input to language translation
+- Language translation
+ - Use the translated text from language translation as input to text to speech
+- AlchemyNews
+ - Use the top article returned by the search from AlchemyNews as input to AlchemyLanuage-Sentiment Analysis and Tone Analyzer
+- Use the top article returned by the search from AlchemyNews as input to relationship extraction to tell who is trending in the article
+
+###  4.4. Define common design patterns for composing multiple Watson services together (across APIs).
+
+Cognitive systems tend to gain more value as additional services are composed. With so many services, it’s sometimes hard to tell which services work best together.
+- Conversation
+ - Goal: Engage user in back-and-forth dialog while detecting and acting on user intent. The specifics of the actions taken are guided by the entities discovered.
+ - Services: Watson Dialog + Natural Language Classifier + entity extraction (Alchemy Language)
+- Q&A
+ - Goal: Answer a wide range of customer questions while offering precise answers for frequently asked facts and highly relevant passages for less frequent questions that may not have a single best answer
+ - Services: Watson Dialog + Natural Language Classifier + Retrieve and Rank
+- Agent Assist
+ - Goal: Provide natural language help systems so call agents can rapidly retrieve answers to customer questions
+ - Services: Watson Dialog + Natural Language Classifier + entity extraction (Alchemy Language)
+- Automated Customer Support Routing
+ - Goal: Detect the topic of a ticket and route to the appropriate department to handle it. E.g. room service, maintenance, housekeeping in the case of hotel guest request routing.
+ - Services: Keyword extraction and sentiment analysis (Alchemy Language)
+- Data Insights
+ - Goal: Monitor all posts with specific keywords (e.g. for a company’s followers, sponsors, or critiques) to detect what’s being discussed and the sentiment/tone associated to it.
+ - Services used: Keyword extraction, entity extraction, and sentiment/tone analysis (Alchemy Language)
+ 
+### 4.5. Design and execute a use case driven service choreography (within an API).
+
+- Natural Language Classifier
+ - Create a classifier
+ - Return label information
+ - List classifiers
+- Dialog
+ - Upload a dialog
+ - Retrieve content
+ - Update content for specific nodes
+ - Start new conversation
+ - Set profile variables
+- Language Translation
+ - Upload glossary
+ - Return translation status
+ - Translate input
+- Alchemy Vision
+ - Recognize face
+ - Extract link
+ - Tag image
+ - Detect text
+ 
+###  4.6. Deploy a web application to IBM Bluemix.
+
+- Configure application’s manifest to request the correct memory and app instance allocations
+ - Configure application with service credentials extracted from VCAP services
+ - Create instances of your required services in IBM Bluemix
+ - Install Cloud Foundry command line tools
+ - Log-in to IBM Bluemix from the command line
+ - Push the application to IBM Bluemix using the Cloud Foundry command line tools
+ 
