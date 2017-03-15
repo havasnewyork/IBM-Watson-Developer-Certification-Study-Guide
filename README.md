@@ -271,7 +271,7 @@ Social Media
 
 #### 1.5.4. Diagrams like this are often useful in capturing the True/False
 Positive/Negatives described above:
-[https://www.quora.com/What-is-the-best-way-to-understand-the-termsprecision-and-recall](#https://www.quora.com/What-is-the-best-way-to-understand-the-termsprecision-and-recall)
+[https://www.quora.com/What-is-the-best-way-to-understand-the-terms-precision-and-recall](#https://www.quora.com/What-is-the-best-way-to-understand-the-terms-precision-and-recall)
 
 ### 1.6. Explain the importance of separating training, validation and test data.
 
@@ -987,11 +987,11 @@ Cognitive systems tend to gain more value as additional services are composed. W
 ### 5.3. Monitoring application performance on IBM Bluemix.
 
 - Configure performance monitoring
-- [Monitor performance of applications](https://console.ng.bluemix.net/docs/services/PerformanceInsights/index.html#perfinsght_prfmn_c)
+- [Monitor performance of applications](https://console.ng.bluemix.net/docs/monitor_log/monitoring/monitoring_bmx_ov.html#monitoring_bmx_ov)
 
 ### 5.4. Examine application logs provided on IBM Bluemix.
 
-- [Log for apps running on Cloud Foundry](http://docs.cloudfoundry.org/devguide/deployapps/streaming-logs.html)
+- [Log for apps running on Cloud Foundry](https://docs.cloudfoundry.org/devguide/deploy-apps/streaming-logs.html)
 - [View logs from the Bluemix dashboard](https://console.ng.bluemix.net/docs/monitor_log/monitoringandlogging.html#monitoring_logging_bluemix_apps)
 - View logs from the command line interface
 - Filter logs
